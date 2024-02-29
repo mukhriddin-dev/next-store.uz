@@ -43,3 +43,29 @@
   text-decoration: none;
   display: block;
 }
+
+@media only screen and (max-width: 768px) {
+  #category .card{
+    width: 160px;
+  }
+  #category .card-wrapper .card-container{
+    row-gap: 10px;
+
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #category .card{
+    width: 150px;
+  }
+
+  #category .card img {
+    width: 150px;
+    margin-top: 18px;
+  }
+
+  #category .card-wrapper .card-container{
+    gap: 20px;
+    justify-items: center;
+  }
+}
