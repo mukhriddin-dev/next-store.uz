@@ -7,10 +7,30 @@ header {
   background-color: #fff;
 }
 
+.menu{
+  display: flex;
+  gap:110px;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+
+.mobile_menu{
+  display: none;
+}
+
+.mobile_menu img{
+  width: 36px;
+  height: 36px;
+}
+
 header .header-top {
   display: flex;
   justify-content: space-between;
   padding: 6px;
+
 }
 
 header .header-top a {
@@ -59,6 +79,7 @@ header .nav .nav__list .nav__list--item:nth-child(1) button {
   gap: 12px;
   cursor: pointer;
 }
+
 header .nav .nav__list .nav__list--item:nth-child(1) i {
   font-size: 28px;
   margin-top: -4px;
@@ -126,4 +147,101 @@ header .nav .nav__list .nav__list--item:nth-child(3) button:nth-child(3):hover {
   background-color: var(--bg-primary-blue);
   color: #fff;
   cursor: pointer;
+}
+
+
+/* ----------------------- HEADER TABLET 768px --------------------- */
+
+
+@media only screen and (max-width: 768px){
+
+  header{
+    background-color: #ffffff90;
+  }
+
+  header .header-top{
+    display: none;
+  }
+
+  header .nav {
+    gap: 100px;
+    align-items: center;
+
+  }
+  header .nav .nav__logo{
+    margin-top: 10px;
+  }
+
+  header .nav .nav__list{
+    gap: 30px;
+  }
+
+  header .nav .nav__list .nav__list--item:nth-child(1){
+    display: none;
+  }
+
+  header .nav .nav__list .nav__list--item:nth-child(3){
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+
+  header{
+    background-color:var(--bg-white-blue);
+    z-index: 9999999999;
+    top:-1px;
+  }
+
+  .mobile_menu{
+    display: block;
+  }
+  
+  header .header-top{
+    display: none;
+  }
+
+  header .nav {
+    gap: 0px;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  header .nav .nav__logo{
+    margin-top: 10px;
+  }
+
+ 
+
+  header .nav .nav__list .nav__list--item:nth-child(1){
+    display: none;
+  }
+
+  header .nav .nav__list .nav__list--item:nth-child(3){
+    display: none;
+  }
+
+  header .nav .nav__list .nav__list--item:nth-child(2){
+    background-color:var(--bg-white-blue);
+    padding: 10px 20px;
+    width: 480px;
+  }
+
+  header .nav .nav__list .nav__list--item .search__wrapper{
+    
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+
+  header .nav .nav__list .nav__list--item .search__wrapper input{
+    width: 80%;
+  }
+
+  header .nav .nav__list .nav__list--item .search__wrapper button {
+    font-size: 20px;
+    padding: 8px 18px;
+  }
+
 }
