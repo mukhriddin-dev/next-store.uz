@@ -11,6 +11,19 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <div id="loader" class="loader">
+
+      <div class="load-wrapper">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+      </div>
+
+    </div>
+
     <!-- ============================= HEADER START ========================== -->
     <header>
       <div class="container">
@@ -25,22 +38,24 @@
 
       <div class="container">
         <nav class="nav">
-
-         <div class="menu">
-
-          <span class="mobile_menu">
-            <img  src="./assets/images/menu.svg" alt="mobile_menu">
-          </span>
-          <a href="#" class="nav__logo">
-            <img src="./public/Logo.svg" alt="Nextstore.uz Internet do'koni" />
-          </a>
-          
-         </div>
+          <div class="menu">
+            <span class="mobile_menu">
+              <img src="./assets/images/menu.svg" alt="mobile_menu" />
+            </span>
+            <a href="#" class="nav__logo">
+              <img
+                src="./public/Logo.svg"
+                alt="Nextstore.uz Internet do'koni"
+              />
+            </a>
+          </div>
 
           <ul class="nav__list">
             <li class="nav__list--item">
-              <button>
-                <i class="bx bx-menu"></i>
+              <button id="toggle">
+                <span id="icon-menu">
+                  <i class="bx bx-menu"></i>
+                </span>
                 <span>KATALOG</span>
               </button>
             </li>
@@ -69,6 +84,93 @@
         </nav>
       </div>
     </header>
+
+    <div class="container relative">
+      <div id="menu-panel" class="menu-panel hide-menu">
+        <ul class="menu-grid">
+          <li class="menu-grid-item">
+            <ul>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-grid-item">
+            <ul>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-grid-item">
+            <ul>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-grid-item">
+            <ul>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-grid-item">
+            <ul>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+
+              <li><a href="#">lorem ipsum dolor</a></li>
+              <li><a href="#">lorem ipsum dolor</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- ============================= HEADER END ========================== -->
 
     <main>
@@ -113,7 +215,6 @@
           <div class="card-wrapper">
             <h2 class="card-title">Kategoriyalar</h2>
             <div class="card-container">
-
               <div class="card">
                 <img
                   src="./assets/images/ipgone.jpg"
@@ -132,8 +233,7 @@
                 />
 
                 <div class="card-body">
-                  <a href="#">Kompyuterlar va
-                    notebooklar</a>
+                  <a href="#">Kompyuterlar va notebooklar</a>
                 </div>
               </div>
 
@@ -202,15 +302,15 @@
                   <p>Smartfonlar</p>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <!-- ============================= MAIN END ========================== -->
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/installSwiper.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

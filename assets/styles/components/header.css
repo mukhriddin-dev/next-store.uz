@@ -17,8 +17,14 @@ header {
 }
 
 
+
+
 .mobile_menu{
   display: none;
+}
+
+#icon-menu{
+  transform: translateY(2px);
 }
 
 .mobile_menu img{
@@ -30,6 +36,8 @@ header .header-top {
   display: flex;
   justify-content: space-between;
   padding: 6px;
+  position: relative;
+  z-index: 12;
 
 }
 
@@ -51,7 +59,10 @@ header .nav {
   align-items: center;
   width: 100%;
   gap: 230px;
-  height: 70px;
+  height: 90px;
+  position: relative;
+  z-index:999;
+  
 }
 
 header .nav .nav__list {
@@ -190,7 +201,7 @@ header .nav .nav__list .nav__list--item:nth-child(3) button:nth-child(3):hover {
 
   header{
     background-color:var(--bg-white-blue);
-    z-index: 9999999999;
+    z-index: 99;
     top:-1px;
   }
 

@@ -30,13 +30,13 @@
   bottom: 0;
   margin-top: 300px;
   transform: translateY(50px);
-  z-index: 3333;
+  z-index: 3;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute !important;
-  z-index: 999;
+  z-index: 9;
   width: 42px;
   height: 42px;
   border-radius: 50%;
